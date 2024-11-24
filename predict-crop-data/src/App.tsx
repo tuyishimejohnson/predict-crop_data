@@ -1,8 +1,14 @@
+import DefaultLayout from "./defaultLayout";
+import Home from "./home";
+
 
 function App() {
   return (
     <>
-      <div>Hello world</div>
+      <div>
+        <DefaultLayout />
+        <Home />
+      </div>
     </>
   );
 }
