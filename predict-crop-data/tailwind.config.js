@@ -4,7 +4,11 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        "noto": ["PT Serif", "serif"],
+        noto: ["PT Serif", "serif"],
+      },
+
+      brightness: {
+        25: ".25",
       },
     },
   },
