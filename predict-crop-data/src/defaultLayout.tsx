@@ -3,7 +3,7 @@ import { Outlet, NavLink } from "react-router-dom";
 const DefaultLayout = () => {
   return (
     <div>
-      <nav className="bg-red-400 flex justify-between py-6 px-32 font-noto items-center">
+      <nav className="flex justify-between py-6 px-32 font-noto items-center">
         <div>
           <NavLink to={"/"}>Grow Initiative</NavLink>
         </div>
