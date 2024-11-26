@@ -1,5 +1,8 @@
 import { Outlet, NavLink } from "react-router-dom";
 
+
+const activeLinks = ({ isActive }: { isActive: boolean }) => isActive ? 'text-blue-500' : undefined; 
+
 const DefaultLayout = () => {
   return (
     <div>
@@ -12,25 +15,20 @@ const DefaultLayout = () => {
           <div className="flex gap-10">
             <NavLink
               to={"/about"}
-              style={({ isActive }) => ({
-                color: isActive ? "blue" : undefined,
-              })}
+              className={activeLinks}
             >
               About
             </NavLink>
             <NavLink
               to={"/services"}
-              style={({ isActive }) => ({
-                color: isActive ? "blue" : undefined,
-              })}
+              className={activeLinks}
             >
               Services
             </NavLink>
             <NavLink
               to={"/contacts"}
-              style={({ isActive }) => ({
-                color: isActive ? "blue" : undefined,
-              })}
+              className={activeLinks}
+        
             >
               Contacts
             </NavLink>
@@ -39,17 +37,13 @@ const DefaultLayout = () => {
           <div className="flex gap-3 items-center">
             <NavLink
               to={"/login"}
-              style={({ isActive }) => ({
-                color: isActive ? "blue" : undefined,
-              })}
+              className={activeLinks}
+              
             >
               Login
             </NavLink>
             <NavLink
               to={"/signup"}
-              style={({ isActive }) => ({
-                color: isActive ? "blue" : undefined,
-              })}
               className={`bg-blue-600 px-5 py-2 rounded-md`}
             >
               Sign Up
