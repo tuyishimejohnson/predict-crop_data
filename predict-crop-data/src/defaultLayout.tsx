@@ -14,10 +14,10 @@ const DefaultLayout = () => {
         <div className="flex justify-between gap-5 w-1/3 items-center">
           <div className="flex gap-10">
             <NavLink to={"/about"} className={activeLinks}>
-              About
+              Dashboard
             </NavLink>
             <NavLink to={"/services"} className={activeLinks}>
-              Services
+              Predict
             </NavLink>
             <NavLink to={"/contacts"} className={activeLinks}>
               Contacts
@@ -28,11 +28,8 @@ const DefaultLayout = () => {
             <NavLink to={"/login"} className={activeLinks}>
               Login
             </NavLink>
-            <NavLink
-              to={"/signup"}
-              className={`bg-blue-500 px-5 py-2 rounded-md text-white`}
-            >
-              Sign Up
+            <NavLink to={"/signup"} className={activeLinks}>
+              Sign up
             </NavLink>
           </div>
         </div>
