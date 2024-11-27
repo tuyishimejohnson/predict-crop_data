@@ -4,11 +4,10 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import DefaultLayout from "./defaultLayout.tsx";
 import Home from "./home.tsx";
-import About from "./about.tsx";
-import Services from "./services.tsx";
 import Contacts from "./contacts.tsx";
-import Login from "./login.tsx";
-import SignUp from "./signup.tsx";
+import Faqs from "./signup.tsx";
+import Dashboard from "./dashboard.tsx";
+import Predict from "./predict.tsx";
 
 const router = createBrowserRouter([
   {
@@ -20,24 +19,20 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/about",
-        element: <About />,
+        path: "/dashboard",
+        element: <Dashboard />,
       },
       {
-        path: "/services",
-        element: <Services />,
+        path: "/predict",
+        element: <Predict />,
       },
       {
         path: "/contacts",
         element: <Contacts />,
       },
       {
-        path: "/login",
-        element: <Login />,
-      },
-      {
-        path: "/signup",
-        element: <SignUp />,
+        path: "/faqs",
+        element: <Faqs />,
       },
     ],
   },
